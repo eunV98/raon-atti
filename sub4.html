@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./main_img/a.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>라온아띠</title>
+  <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+  <!-- 폰트 -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--슬라이드-->
+
+  <link rel="stylesheet" href="./css/mouse_line.css"><!--마우스-->
+
+  <link rel="stylesheet" href="./css/sub4.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="header_in">
+      <a href="./index.html"><img src="./main_img/header_logo.png" alt="header_logo"></a>
+      <ul id="gnb">
+        <li><a href="./sub1.html">라온아띠<div class="solid"></div></a></li>
+        <li><a href="./sub2.html">프로그램<div class="solid"></div></a></li>
+        <li><a href="./sub3.html">서비스<div class="solid"></div></a></li>
+        <li class="on"><a href="./sub4.html">이벤트<div class="solid"></div></a></li>
+      </ul>
+      <a href="#none"><img src="./main_img/header_insta.png" alt="header_insta" class="insta"></a>
+    </div>
+  </header>
+
+  <!-- content -->
+  <div class="con1">
+    <div class="con1_text">
+      <h1>
+        RAON-ATTI
+      </h1>
+      <h2>이벤트</h2>
+    </div>
+  </div>
+
+  <div class="con2">
+    <h1 data-aos="fade-up">
+      이벤트
+    </h1>
+    <h3 data-aos="fade-up">
+      라온아띠의 다양한 이벤트를 만나보세요!
+    </h3>
+    <ul>
+      <li data-aos="fade-up" data-aos-delay="0"><a href="#none">
+          <div><img src="./sub4_img/event1.png" alt="event1"></div>
+        </a>
+        <p>펫캉스 이벤트</p>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="300"><a href="#none">
+          <div><img src="./sub4_img/event2.png" alt="event2"></div>
+        </a>
+        <p>우리집 댕댕이 사진 올리고<br>
+          유치원 체험권 받자!</p>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="600"><a href="#none">
+          <div><img src="./sub4_img/event3.png" alt="event3"></div>
+        </a>
+        <p>카페 오픈 기념<br>
+          쿠폰 이벤트</p>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="300" class="event_end"><a href="#none">
+          <div><img src="./sub4_img/event4.png" alt="event4">
+          </div>
+          <p><img src="./sub4_img/event_end.png" alt="event_end" class="hover_img"></p>
+        </a>
+        <p>룰렛 이벤트</p>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="600" class="event_end"><a href="#none">
+          <div><img src="./sub4_img/event5.png" alt="event5">
+          </div>
+          <p><img src="./sub4_img/event_end.png" alt="event_end" class="hover_img">
+          </p>
+        </a>
+        <p>카카오톡 친구추가 시<br>
+          수제간식 증정!</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer_in">
+      <a href="#"><img src="./main_img/footer_logo.png" alt="footer_logo" class="footer_logo"></a>
+      <p><b>라온아띠 ｜ 대표</b> 정은비</p>
+      <p><b>사업자번호</b> 980-306 <b>｜ 상담번호</b> 010-1234-5678</p>
+      <p><b>주소</b> 양산시 라온아띠로 1길 12, 라온아띠</p>
+      <p class="copy"><b>Copyright ⓒ 2023 라온아띠 All rights reserved. </b></p>
+      <a href="#none"><img src="./main_img/footer_insta.png" alt="footer_insta"></a>
+    </div>
+  </footer>
+
+  <!-- 탑버튼 -->
+  <div class="top"><a href="#"><img src="./main_img/top.png" alt="top">
+    </a></div>
+
+  <!-- 마우스 -->
+  <div id="drawing_line">
+    <svg class="drawing_line_svg">
+      <circle class="drawing_line_circle" cx="0" cy="0" r="8"></circle>
+      <polyline class="drawing_line_polyline" points=""></polyline>
+    </svg>
+  </div>
+
+
+
+  <!-- js -->
+
+  <!-- 슬라이드 js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리,수정X -->
+
+  <script src="script/header_scroll.js"></script><!--헤더 스크롤 수정O-->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+  <script src="script/aos.js"></script><!-- aos 소스 -->
+
+  <script src="script/mouse_line.js"></script><!--마우스-->
+</body>
+
+</html>

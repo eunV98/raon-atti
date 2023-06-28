@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'GmarketSans';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4A4A4A;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99;
+    /* 부드럽게 올라가고 내려가는 효과 */
+    transition: all 1s;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -144px;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_in>ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header_in>a>img {
+    display: block;
+}
+
+.header_in>ul>li>a {
+    display: block;
+    margin: 60px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header_in>ul>li>a:hover {
+    color: #FFB219;
+}
+
+.insta:hover {
+    opacity: 0.7;
+}
+
+.header_in>ul>.on>a{
+    color: #FFB219;
+}
+
+.header_in>ul>.on>a .solid{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* 헤더호버 */
+.solid {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    height: 5px;
+    background: #FFB219;
+    opacity: 0;
+    transform: scaleX(0);
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+    position: absolute;
+    left: 0;
+}
+
+#gnb>li>a:hover .solid {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* content */
+.con1 {
+    background: url(../sub4_img/banner.png) no-repeat center top;
+    height: 699px;
+    margin-top: 144px;
+    background-size: cover;
+}
+
+.con1_text {
+    text-align: center;
+    padding-top: 300px;
+}
+
+.con1_text h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+
+.con1_text h2 {
+    font-size: 50px;
+}
+
+.con2 {
+    width: 1330px;
+    margin: 100px auto 50px;
+    text-align: center;
+}
+
+.con2 h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFB219;
+}
+
+.con2 h3 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 0 50px;
+}
+
+.con2 p {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.con2 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.con2 ul li {
+    padding-bottom: 50px;
+}
+
+.con2 ul li div img {
+    width: 430px;
+    height: 580px;
+    display: block;
+    transition: all 1s;
+}
+
+.con2 ul li div {
+    overflow: hidden;
+}
+
+.con2 ul li:hover div img {
+    transform: scale(1.1, 1.1);
+}
+
+.con2 ul li:nth-child(1),
+.con2 ul li:nth-child(2),
+.con2 ul li:nth-child(4) {
+    padding-right: 20px;
+}
+
+.event_end div {
+    background-color: #000;
+    position: relative;
+}
+
+.event_end:hover div img {
+    opacity: 0.6;
+}
+
+.event_end:hover .hover_img{
+    opacity: 1;
+}
+
+.hover_img {
+    position: absolute;
+    top: calc(50% - 170px);
+    left: calc(50% - 160px);
+    width: 321px;
+    height: 194px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #DEDEDE;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.copy {
+    padding-top: 30px;
+}
+
+.footer_logo {
+    padding-bottom: 20px;
+}
+
+/* 탑버튼 */
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+}
+
+.top img {
+    display: block;
+}
+
+.top a {
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 20px;
+}
+
+.top:hover a {
+    transform: translateY(-50px);
+}

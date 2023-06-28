@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'GmarketSans';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4A4A4A;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99;
+    /* 부드럽게 올라가고 내려가는 효과 */
+			transition: all 1s;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -144px;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_in>ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header_in>a>img {
+    display: block;
+}
+
+.header_in>ul>li>a {
+    display: block;
+    margin: 60px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header_in>ul>li>a:hover {
+    color: #FFB219;
+}
+
+.insta:hover {
+    opacity: 0.7;
+}
+
+/* 헤더호버 */
+.solid {
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	height: 5px;
+	background: #FFB219;
+	opacity: 0;
+	transform: scaleX(0);
+	transition-property: opacity, transform;
+	transition-duration: 0.5s;
+	position: absolute;
+    left: 0;
+}
+
+#gnb>li>a:hover .solid {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+/* content */
+.con1{
+    margin-top: 144px;
+}
+.con1 img {
+    width: 100%;
+    display: block;
+}
+
+.con2 {
+    width: 1080px;
+    margin: auto;
+    text-align: center;
+}
+
+.con2 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.con2 ul li {
+    width: 249px;
+    position: relative;
+}
+
+.con2 ul li:hover .schedulehover {
+    opacity: 1;
+}
+
+.schedulehover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.more {
+    display: inline-block;
+    color: #FFB219;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #FFB219;
+    border-radius: 12px;
+    padding: 10px 15px 6px;
+    margin-bottom: 100px;
+}
+
+.more:hover {
+    background-color: #FFB219;
+    color: #fff;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFB219;
+    margin: 100px 0 10px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.con3 {
+    overflow: hidden;
+    position: relative;
+    background-color: #FFCD72;
+    padding: 62px 0;
+    height: 66px;
+}
+
+.con3 div {
+    width: 300%;
+    height: 66px;
+    background: url(../main_img/slidelogo.png) repeat-x;
+    position: absolute;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -200%;
+    }
+}
+
+.con4 {
+    width: 1271px;
+    margin: auto;
+    text-align: center;
+}
+
+.con4 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.con4 ul img {
+    display: block;
+    transition: all 1s;
+}
+
+.con4 ul li {
+    margin-bottom: 5px;
+    border-radius: 30px 0 0 0;
+    overflow: hidden;
+}
+
+.con4 ul li img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.con5 {
+    background-color: #FFEFB3;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.con5 h1 {
+    margin: 0 0 10px;
+}
+
+.con6 {
+    background: url(../main_img/smallbanner.jpg) no-repeat center top fixed;
+    height: 400px;
+    background-size: cover
+}
+
+.con6_text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFB219;
+    padding-bottom: 30px;
+}
+
+.con6_text p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.con6_text {
+    width: 1320px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.con7 {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* footer */
+footer {
+    background-color: #DEDEDE;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.copy {
+    padding-top: 30px;
+}
+
+.footer_logo {
+    padding-bottom: 20px;
+}
+
+/* 탑버튼 */
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+}
+
+.top img {
+    display: block;
+}
+
+.top a{
+    display: block;background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 20px;
+}
+
+.top:hover a{
+    transform: translateY(-50px);
+}

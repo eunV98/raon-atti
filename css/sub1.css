@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'GmarketSans';
+    font-size: 14px;
+    line-height: 24px;
+    color: #4A4A4A;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99;
+    /* 부드럽게 올라가고 내려가는 효과 */
+    transition: all 1s;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -144px;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_in>ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header_in>a>img {
+    display: block;
+}
+
+.header_in>ul>li>a {
+    display: block;
+    margin: 60px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header_in>ul>li>a:hover {
+    color: #FFB219;
+}
+
+.insta:hover {
+    opacity: 0.7;
+}
+
+.header_in>ul>.on>a{
+    color: #FFB219;
+}
+
+.header_in>ul>.on>a .solid{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* 헤더호버 */
+.solid {
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	height: 5px;
+	background: #FFB219;
+	opacity: 0;
+	transform: scaleX(0);
+	transition-property: opacity, transform;
+	transition-duration: 0.5s;
+	position: absolute;
+    left: 0;
+}
+
+#gnb>li>a:hover .solid {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+/* content */
+.con1 {
+    background: url(../sub1_img/banner.png) no-repeat center top;
+    height: 699px;
+    margin-top: 144px;
+    background-size: cover;
+}
+
+.con1_text {
+    text-align: center;
+    padding-top: 300px;
+}
+
+.con1_text h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+
+.con1_text h2 {
+    font-size: 50px;
+}
+
+.con2 {
+    width: 1320px;
+    margin: 100px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.con2_text {
+    width: 760px;
+
+}
+
+.con2_text h3 {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.con2_text h3 span {
+    color: #FFB219;
+    font-size: 30px;
+}
+
+.con2_text h4 {
+    font-size: 25px;
+    padding: 0 0 30px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.con2_text p {
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.con2_text .h4_bottom {
+    padding: 20px 0 0;
+}
+
+.con2 img {
+    display: block;
+}
+
+.rotate {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rotate_text {
+    animation: rotate 10s infinite linear;
+
+}
+
+.rotate_img {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 65px);
+    width: 130px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.con3 {
+    background-color: #F1F1F1;
+    padding: 100px 0;
+}
+
+.con3_in {
+    width: 1320px;
+    margin: auto;
+}
+
+.con3_in ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con3_in h3 {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.con3_in h3 span {
+    color: #FFB219;
+    font-size: 30px;
+}
+
+.logo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.logo img {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.color {
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.color li {
+    width: 649px;
+    height: 194px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.color1 {
+    background-color: #CEABCB;
+    margin-bottom: 30px;
+}
+
+.color2 {
+    background-color: #E3CAE2;
+    margin-bottom: 30px;
+}
+
+.color3 {
+    background-color: #FFB219;
+}
+
+.color4 {
+    background-color: #ffffff;
+}
+
+.color h5 {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.color p {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* footer */
+footer {
+    background-color: #DEDEDE;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.copy {
+    padding-top: 30px;
+}
+
+.footer_logo {
+    padding-bottom: 20px;
+}
+
+/* 탑버튼 */
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+}
+
+.top img {
+    display: block;
+}
+
+.top a {
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 20px;
+}
+
+.top:hover a {
+    transform: translateY(-50px);
+}
